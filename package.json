@@ -1,0 +1,44 @@
+{
+	"name": "success-template",
+	"description": "",
+	"version": "0.0.13",
+	"threevot": {
+		"version": "13",
+		"screens": {
+			"0-480": "index",
+			"480-768": "index",
+			"768-1200": "index",
+			"1200-5000": "index"
+		},
+		"extensions": [
+			".coffee",
+			".eco",
+			".html"
+		],
+		"transforms": [
+			"browserify-eco",
+			"coffeeify",
+			"brfs"
+		],
+		"external": {},
+		"gitDependencies": {},
+		"paths": {
+			"sourceBucket": "source.3vot.com",
+			"productionBucket": "3vot.com"
+		},
+		"uploadSource": true,
+		"build": true,
+		"distFolder": "dist",
+		"pathsToExclude": [
+			"node_modules"
+		],
+		"uploadApp": true
+	},
+	"dependencies": {
+		"3vot": "0.1.4",
+		"insert-css": "0.2.0",
+		"brfs": "0.0.8",
+		"browserify-eco": "~0.2.4",
+		"coffeeify": "~0.6.0"
+	}
+}
